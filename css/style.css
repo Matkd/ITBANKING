@@ -11,7 +11,13 @@
 }
 
 body {
+  background-color: var(--bgColor);
   font-family: 'Poppins', sans-serif;
+}
+
+section {
+  margin: 6rem 0;
+  padding: 0 4rem;
 }
 
 /* Nav */
@@ -21,6 +27,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  background-color: white;
 }
 
 .blanco {
@@ -204,6 +211,108 @@ header {
   height: 100%;
 }
 
+/* Ser Parte Section */
+.ser-parte {
+  color: white;
+}
+
+.subtitulo {
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.itbank {
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.parte-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.parte-section {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 50%;
+}
+
+.parte-card {
+  position: relative;
+  padding: 4rem 1.3rem 1rem 1rem;
+  border: 2px solid white;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.parte-num {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.parte-card p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.parte-icon {
+  position: absolute;
+  top: .5rem;
+  right:  1.3rem;
+  width: 50px;
+  height: 50px;
+  filter: invert(100%);
+}
+
+.parte-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Banco Digital Section */
+.banco-digital {
+  margin-inline: auto;
+  max-width: 50rem;
+  text-align: center;
+  color: white;
+}
+
+.cero-pesos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 7rem;
+  font-weight: 600;
+}
+
+.pesos {
+  font-size: 4rem;
+}
+
+.banco-digital p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.btn-registrate {
+  margin-top: 1rem;
+  padding: 0.7rem 5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  font-weight: 600;
+  transition: transform ease-in 150ms;
+}
+
+.btn-registrate:hover {
+  transform: scale(1.03);
+  transition: transform ease-in 150ms;
+}
+
 /* Footer */
 footer {
   position: relative;
@@ -212,13 +321,13 @@ footer {
   margin-top: 5rem;
   padding: 4rem 4rem 6rem 4rem;
   width: 100%;
-  background-color: var(--bgColor);
-  color: white;
+  background-color: white;
+  color: black;
 }
 
-.footer-logo {
+/* .footer-logo {
   filter: invert(100%);
-}
+} */
 
 .footer-section {
   margin-bottom: 2.5rem;
@@ -249,7 +358,7 @@ footer {
 
 .footer-section li a {
   position: relative;
-  color: white;
+  color: black;
   opacity: 0.8;
   text-decoration: none;
 }
@@ -261,7 +370,7 @@ footer {
   bottom: -3px;
   width: 100%;
   height: 2px;
-  background-color: white;
+  background-color: black;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 400ms ease;
@@ -277,19 +386,17 @@ footer {
   position: absolute;
   right: 4rem;
   bottom: 0.5rem;
-  color: rgb(218, 218, 218);
+  color: rgb(34, 34, 34);
   font-size: 0.9rem;
   opacity: 0.8;
 }
 
 /* Media Queries */
-@media (max-width: 931px) {
-  .footer-section:nth-child(1) {
-    margin-right: 30rem;
-  }
-}
-
 @media (max-width: 950px) {
+  section {
+    padding: 0 1.5rem;
+  }
+
   .header-info {
     top: 3.5rem;
     left: 50%;
@@ -300,6 +407,20 @@ footer {
     bottom: -7rem;
     right: 50%;
     transform: translateX(50%);
+  }
+
+  .parte-container {
+    flex-wrap: wrap;
+  }
+
+  .parte-section {
+    width: initial;
+  }
+}
+
+@media (max-width: 931px) {
+  .footer-section:nth-child(1) {
+    margin-right: 30rem;
   }
 }
 
