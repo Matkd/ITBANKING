@@ -8,6 +8,7 @@
 
 :root {
   --bgColor: #1e1e1e;
+  --textColor: white;
 }
 
 body {
@@ -20,7 +21,9 @@ section {
   padding: 0 4rem;
 }
 
+/*******/
 /* Nav */
+/*******/
 nav {
   position: relative;
   display: flex;
@@ -153,7 +156,9 @@ nav {
   bottom: 0;
 }
 
+/**********/
 /* Header */
+/**********/
 header {
   position: relative;
   width: 100%;
@@ -211,9 +216,11 @@ header {
   height: 100%;
 }
 
+/*********************/
 /* Ser Parte Section */
+/*********************/
 .ser-parte {
-  color: white;
+  color: var(--textColor);
 }
 
 .subtitulo {
@@ -242,7 +249,7 @@ header {
 .parte-card {
   position: relative;
   padding: 4rem 1.3rem 1rem 1rem;
-  border: 2px solid white;
+  border: 2px solid var(--textColor);
   width: 50%;
   border-radius: 5px;
 }
@@ -260,8 +267,8 @@ header {
 
 .parte-icon {
   position: absolute;
-  top: .5rem;
-  right:  1.3rem;
+  top: 0.5rem;
+  right: 1.3rem;
   width: 50px;
   height: 50px;
   filter: invert(100%);
@@ -272,12 +279,14 @@ header {
   height: 100%;
 }
 
+/*************************/
 /* Banco Digital Section */
+/*************************/
 .banco-digital {
   margin-inline: auto;
   max-width: 50rem;
   text-align: center;
-  color: white;
+  color: var(--textColor);
 }
 
 .cero-pesos {
@@ -303,7 +312,7 @@ header {
   padding: 0.7rem 5rem;
   border: none;
   border-radius: 5px;
-  background-color: white;
+  background-color: var(--textColor);
   font-weight: 600;
   transition: transform ease-in 150ms;
 }
@@ -313,7 +322,9 @@ header {
   transition: transform ease-in 150ms;
 }
 
+/**********/
 /* Footer */
+/**********/
 footer {
   position: relative;
   display: flex;
@@ -321,13 +332,9 @@ footer {
   margin-top: 5rem;
   padding: 4rem 4rem 6rem 4rem;
   width: 100%;
-  background-color: white;
+  background-color: var(--textColor);
   color: black;
 }
-
-/* .footer-logo {
-  filter: invert(100%);
-} */
 
 .footer-section {
   margin-bottom: 2.5rem;
@@ -391,7 +398,9 @@ footer {
   opacity: 0.8;
 }
 
+/*****************/
 /* Media Queries */
+/*****************/
 @media (max-width: 950px) {
   section {
     padding: 0 1.5rem;
