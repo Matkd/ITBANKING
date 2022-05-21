@@ -17,20 +17,38 @@ body {
 }
 
 section {
-  margin: 6rem 0;
+  margin: 8rem 0;
   padding: 0 4rem;
+  max-width: 90rem;
+}
+
+.subtitulo {
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--textColor);
+}
+
+.itbank {
+  font-weight: 600;
+  font-size: 1.7rem;
 }
 
 /*******/
 /* Nav */
 /*******/
 nav {
+  background-color: white;
+}
+
+.nav-container {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  background-color: white;
+  margin-inline: auto;
+  padding: 1rem 4rem;
+  max-width: 90rem;
 }
 
 .blanco {
@@ -162,11 +180,20 @@ nav {
 header {
   position: relative;
   width: 100%;
+}
+
+.header-container {
+  position: relative;
+  margin-inline: auto;
+  max-width: 90rem;
   height: 40rem;
   overflow: hidden;
 }
 
 .header-img {
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
 }
@@ -221,17 +248,7 @@ header {
 /*********************/
 .ser-parte {
   color: var(--textColor);
-}
-
-.subtitulo {
-  margin-bottom: 2rem;
-  font-size: 1.6rem;
-  font-weight: 400;
-}
-
-.itbank {
-  font-weight: 600;
-  font-size: 1.7rem;
+  margin-inline: auto;
 }
 
 .parte-container {
@@ -277,6 +294,49 @@ header {
 .parte-icon img {
   width: 100%;
   height: 100%;
+}
+
+/************************/
+/* Cargar Saldo Section */
+/************************/
+.cargar-saldo {
+  margin-inline: auto;
+}
+
+.cargar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: var(--textColor);
+}
+
+.cargar-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  border: 2px solid var(--textColor);
+  border-radius: 5px;
+  width: 50%;
+}
+
+.cargar-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+}
+
+.cargar-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.cargar-card p {
+  margin: 0;
+  font-size: 1.5rem;
 }
 
 /*************************/
@@ -326,14 +386,21 @@ header {
 /* Footer */
 /**********/
 footer {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
   margin-top: 5rem;
-  padding: 4rem 4rem 6rem 4rem;
+  padding: 4rem 0 6rem 0;
   width: 100%;
   background-color: var(--textColor);
   color: black;
+}
+
+.footer-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-inline: auto;
+  padding-inline: 4rem;
+  max-width: 90rem;
+  height: 100%;
 }
 
 .footer-section {
@@ -392,7 +459,7 @@ footer {
 .copyright {
   position: absolute;
   right: 4rem;
-  bottom: 0.5rem;
+  bottom: -5.5rem;
   color: rgb(34, 34, 34);
   font-size: 0.9rem;
   opacity: 0.8;
@@ -401,9 +468,19 @@ footer {
 /*****************/
 /* Media Queries */
 /*****************/
+@media (max-width: 984px) {
+  .cargar-card {
+    height: 8rem;
+  }
+}
+
 @media (max-width: 950px) {
   section {
     padding: 0 1.5rem;
+  }
+
+  .nav-container {
+    padding: 1rem 1.5rem;
   }
 
   .header-info {
@@ -424,6 +501,14 @@ footer {
 
   .parte-section {
     width: initial;
+  }
+
+  .footer-container {
+    padding-inline: 1.5rem;
+  }
+
+  .copyright {
+    right: 1.5rem;
   }
 }
 
@@ -509,7 +594,22 @@ footer {
     height: 38rem;
   }
 
+  .cargar-container {
+    flex-direction: column;
+  }
+
+  .cargar-card {
+    height: initial;
+    width: 100%;
+  }
+
   .footer-section:nth-child(1) {
     margin-right: 10rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-info {
+    width: 15rem;
   }
 }
