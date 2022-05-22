@@ -29,9 +29,9 @@
         </div>
         <div class="blanco"></div>
         <ul class="nav-links">
-          <li><a href="">Ingresar</a></li>
-          <li><a href="">Ingresar</a></li>
-          <li><a href="">Ingresar</a></li>
+          <li><a href="">Precios</a></li>
+          <li><a href="">Seguridad</a></li>
+          <li><a href="">Ayuda</a></li>
           <li><a href="">FAQS</a></li>
         </ul>
         <div class="nav-btns">
@@ -50,25 +50,52 @@
         </div>
       </div>
     </nav>
-    <!-- Form -->
-    <div class="containerform">
-      <form class="form-signin">
-        <img src="Img\icon-itba-logo.png" alt="20px" style="margin: 10px;">
-        <input class="form-control" placeholder="Nombre de usuario, email o DNI" required autofocus>
-        <input class="form-control" placeholder="Contraseña" required>
-        <div class="checkbox mb-3">
-          <label>
-            <input type="checkbox" value="remember-me"> Recuérdame
-          </label>
+    <section class="flex-container">
+      <div class="container-form">
+        <!-- Form -->
+        <div class="form-signin">
+          <form>
+            <img src="Img\icon-itba-logo.png" alt="20px" style="margin: 10px" />
+            <input
+              class="form-control"
+              placeholder="Nombre de usuario, email o DNI"
+              required
+              autofocus
+            />
+            <input class="form-control" placeholder="Contraseña" required />
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me" /> Recuérdame
+              </label>
+            </div>
+            <a
+              href="#"
+              class="btn btn-primary"
+              role="button"
+              aria-disabled="true"
+              >Iniciar sesión</a
+            >
+            <a href="#" class="btn-secondary" role="button" aria-disabled="true"
+              >¿Olvidaste tu contraseña?</a
+            >
+          </form>
         </div>
-        <a href="#" class="btn btn-primary" role="button" aria-disabled="true">Iniciar sesión</a>
-        <a href="#" class="btn-secondary " role="button" aria-disabled="true">¿Olvidaste tu contraseña?</a>
-      </form>
-      <!-- Img -->
-      <div class="img-form">
-          <img src="Img\Tarjeta-ITBA-mirror.png" class="rounded" alt="70px">
+        <!-- Img-Form -->
+        <div class="img-form">
+          <div class="header-img">
+            <img src="./Img/Fondo-banco-ITBA.png" alt="" />
+          </div>
+          <div class="header-info">
+            <h1 class="header-info-100">100%</h1>
+            <h1 class="header-info-seguros">SEGUROS TRANSPARENTES</h1>
+          </div>
+          <div class="header-tarjeta">
+            <img src="./Img/Tarjeta-ITBA-mirror.png" alt="" />
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+
     <!-- Footer -->
     <footer>
       <div class="footer-container">
@@ -106,7 +133,5 @@
       </div>
     </footer>
     <script src="./js/index.js"></script>
-
   </body>
-
 </html>

@@ -13,7 +13,7 @@
 
 body {
   background-color: var(--bgColor);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 section {
@@ -37,6 +37,7 @@ section {
 /*******/
 /* Nav */
 /*******/
+
 nav {
   background-color: white;
 }
@@ -76,7 +77,7 @@ nav {
 }
 
 .nav-links a::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -3px;
@@ -163,13 +164,13 @@ nav {
 }
 
 .bars::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
 }
 
 .bars::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
 }
@@ -177,6 +178,7 @@ nav {
 /**********/
 /* Header */
 /**********/
+
 header {
   position: relative;
   width: 100%;
@@ -243,9 +245,55 @@ header {
   height: 100%;
 }
 
+/*********/
+/* Cards */
+/*********/
+
+.cards {
+  margin-inline: auto;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.card {
+  width: 350px;
+  display: flex;
+  background-color: #333333;
+  border: none;
+  align-items: center;
+  cursor: pointer;
+}
+
+.card-body {
+  height: 160px;
+}
+
+.card-img {
+  filter: drop-shadow(5px 10px 15px #1e1e1e);
+}
+
+.card h5 {
+  color: white;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.btn-primary {
+  color: white;
+  font-weight: bolder;
+  margin-bottom: 25px;
+  text-decoration: none;
+}
+
 /*********************/
 /* Ser Parte Section */
 /*********************/
+
 .ser-parte {
   color: var(--textColor);
   margin-inline: auto;
@@ -299,6 +347,7 @@ header {
 /************************/
 /* Cargar Saldo Section */
 /************************/
+
 .cargar-saldo {
   margin-inline: auto;
 }
@@ -385,6 +434,7 @@ header {
 /**********/
 /* Footer */
 /**********/
+
 footer {
   margin-top: 5rem;
   padding: 4rem 0 6rem 0;
@@ -438,7 +488,7 @@ footer {
 }
 
 .footer-section li a::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -3px;
@@ -468,6 +518,7 @@ footer {
 /*****************/
 /* Media Queries */
 /*****************/
+
 @media (max-width: 984px) {
   .cargar-card {
     height: 8rem;
@@ -496,6 +547,10 @@ footer {
   }
 
   .parte-container {
+    flex-wrap: wrap;
+  }
+
+  .card-container {
     flex-wrap: wrap;
   }
 
