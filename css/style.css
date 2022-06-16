@@ -245,6 +245,56 @@ header {
   height: 100%;
 }
 
+/* Cotizaciones */
+
+.cotizacion {
+  display: flex;
+  gap: 1rem;
+}
+
+.cotizacion-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid #333333;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.cotizacion-card p {
+  margin: 0;
+}
+
+.cotizacion-header {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.5rem;
+  height: 3rem;
+  border-radius: 5px;
+  background-color: #728176;
+}
+
+.cotizacion-titulo {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.cotizacion-titulo h3 {
+  height: fit-content;
+}
+
+.cotizacion-body {
+  padding: 0.5rem 0.5rem;
+}
+
+.cotizacion-footer {
+  padding: 0.5rem;
+  background-color: #333333;
+}
+
 /*********/
 /* Cards */
 /*********/
